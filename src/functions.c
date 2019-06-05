@@ -27,4 +27,19 @@ void register(char team_name[][4], score result_group_matches[]){
         }
     }
     
+    strcpy(team_name[line],"TBD");
+    line = 0;
+    
+    for(int i = 0; i < teams; i++){
+        for(int j = 0; j < teams; j++){
+            if(i / (teams/groups) == j / (teams/groups)){
+                result_group_matches[line].princ = i;
+                result_group_matches[line].visit = j;
+                result_group_matches[line].score_princ = -1;
+                result_group_matches[line].score_visit = -1;
+                line++;
+            }
+        }
+    }
+    return 1;
 }
