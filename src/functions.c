@@ -47,3 +47,6 @@ void register(char team_name[][4], score result_group_matches[]){
 }
 
 //Creates the group tables
+void group_tables(char team_name[][4], score result_group_matches[], int group_matches){
+    
+}
