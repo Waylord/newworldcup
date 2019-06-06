@@ -10,12 +10,14 @@ int fat(int n){
     return i;
 }
 
+//calculates the combination of two numbers using fatorial function
 int combin(int n){
     int k = 2;
     result = fat(n) / (fat(k) * fat(n - k));
     return result;
 }
 
+//register the teams on program
 void register(char team_name[][4], score result_group_matches[]){
     char ans;
     int line = 0, i = 0; j = 0;
@@ -43,3 +45,5 @@ void register(char team_name[][4], score result_group_matches[]){
     }
     return 1;
 }
+
+//Creates the group tables
